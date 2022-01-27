@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~normalize.css";
+
+html,
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ml-1 {
+  margin-left: .5rem;
+}

@@ -1,0 +1,6 @@
+<div class="actions">
+    <button type="button" (click)="editAllUsers()">Edit all</button>
+    <button type="button" (click)="deleteAllUsers()" class="ml-1">Delete all</button>
+</div>
+
+<app-user-detail *ngFor="let user of users$ | async" [user]="user"></app-user-detail>

@@ -1,0 +1,13 @@
+<ng-container *ngIf="isEditing; else userDisplay">
+  <input type="text" #inputEl [value]="user.name" />
+  <button class="float" (click)="save(user.id, inputEl.value)">Save</button>
+</ng-container>
+
+<ng-template #userDisplay>
+  {{ user.name }}
+
+  <div class="float">
+    <button (click)="isEditing = true">Edit</button>
+    <button (click)="delete(user.id)" class="ml-1">Delete</button>
+  </div>
+</ng-template>
